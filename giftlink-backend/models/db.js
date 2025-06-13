@@ -24,4 +24,6 @@ async function connectToDatabase() {
     return dbInstance;
 }
 
+console.log("MONGO_URL =", JSON.stringify(process.env.MONGO_URL));
+
 module.exports = connectToDatabase;
