@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 const express = require('express');
 const router = express.Router();
 const connectToDatabase = require('../models/db');
@@ -16,7 +17,7 @@ router.get('/', async (req, res) => {
         const gifts = await collection.find({}).toArray();
 
         // Task 4: return the gifts using the res.json method
-        res.json(gifts)
+        res.json(gifts);
     } catch (e) {
         console.error('Error fetching gifts:', e);
         res.status(500).send('Error fetching gifts');
