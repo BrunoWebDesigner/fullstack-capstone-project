@@ -10,7 +10,7 @@ import DetailsPage from './components/DetailsPage/DetailsPage';
 import SearchPage from './components/SearchPage/SearchPage';
 
 function App() {
-  const navigate = useNavigate();
+// const navigate = useNavigate();  // 💬 temporarily comment out
   return (
         <>
         <Navbar/>
